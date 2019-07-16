@@ -1,6 +1,6 @@
 import React from "react";
 // nodejs library that concatenates classes
-import classNames from "classnames";
+// import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
@@ -19,18 +19,18 @@ import CardFooter from "components/Card/CardFooter.jsx";
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 
-import team1 from "assets/img/faces/avatar.jpg";
+// import team1 from "assets/img/faces/avatar.jpg";
 // import team2 from "assets/img/faces/christian.jpg";
 // import team3 from "assets/img/faces/kendall.jpg";
 
 class TeamSection extends React.Component {
   render() {
     const { classes } = this.props;
-    const imageClasses = classNames(
-      classes.imgRaised,
-      classes.imgRoundedCircle,
-      classes.imgFluid
-    );
+    // const imageClasses = classNames(
+    //   classes.imgRaised,
+    //   classes.imgRoundedCircle,
+    //   classes.imgFluid
+    // );
     return (
       <div className={classes.section}>
         <h2 className={classes.title}>团队</h2>
@@ -38,9 +38,9 @@ class TeamSection extends React.Component {
           <GridContainer justify='center'>
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
-                <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+{/*                <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img src={team1} alt="..." className={imageClasses} />
-                </GridItem>
+                </GridItem>*/}
                 <h4 className={classes.cardTitle}>
                   Leo Wang
                   <br />
@@ -56,8 +56,11 @@ class TeamSection extends React.Component {
                     justIcon
                     color="transparent"
                     className={classes.margin5}
+                    href="https://github.com/wanglingsong"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >
-                    <FaGithub/>
+                    <FaGithub />
                   </Button>
                 </CardFooter>
               </Card>

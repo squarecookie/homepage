@@ -15,8 +15,10 @@ const projectStyle = {
     textDecoration: "none"
   },
   content: {
-  	color: "#3c4858",
-  	textAlign: "left"
+  	color: "#3c4858"
+  },
+  projectDescription: {
+    textAlign: "left"
   }
 };
 

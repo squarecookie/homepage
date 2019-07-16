@@ -13,7 +13,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import { Apps, CloudDownload } from "@material-ui/icons";
 
 // React icons
-import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaInstagram, FaWeChat } from 'react-icons/fa';
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
@@ -58,7 +58,7 @@ function HeaderLinks({ ...props }) {
           <CloudDownload className={classes.icons} /> Download
         </Button>
       </ListItem>*/}
-      <ListItem className={classes.listItem}>
+{/*      <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
@@ -108,7 +108,7 @@ function HeaderLinks({ ...props }) {
             <FaInstagram/>
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem>*/}
     </List>
   );
 }
