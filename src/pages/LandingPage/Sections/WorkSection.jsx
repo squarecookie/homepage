@@ -83,6 +83,13 @@ class WorkSection extends React.Component {
               </GridContainer>
             </form>*/}
           </GridItem>
+          <GridItem cs={12} sm={12} md={8}>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={6}>
+                  <a href="http://beian.miit.gov.cn/" rel="noopener noreferrer" target="_blank">粤ICP备19066015号</a>
+                </GridItem>
+              </GridContainer>
+          </GridItem>
         </GridContainer>
       </div>
     );
