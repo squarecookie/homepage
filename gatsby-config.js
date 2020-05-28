@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/mini-gatsbyv2-material-kit-react`,
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: '方饼干科技官网',
   },
   plugins: [
     'gatsby-plugin-resolve-src',
@@ -17,7 +17,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/img/favicon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/img/sq-logo.png', // This path is relative to the root of the site.
       },
     },
   ],

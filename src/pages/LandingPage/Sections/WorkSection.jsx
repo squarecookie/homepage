@@ -4,7 +4,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
-
+import Home from "@material-ui/icons/Home";
+// import Phone from "@material-ui/icons/Phone";
+import beianImg from 'assets/img/beian.png'
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -22,13 +24,30 @@ class WorkSection extends React.Component {
         <GridContainer justify="center">
           <GridItem cs={12} sm={12} md={8}>
             <h2 className={classes.title}>联系我们</h2>
+            <h3 className={classes.title}>方饼干科技（深圳）有限公司</h3>
               <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={6}>
+                <GridItem xs={12} sm={12} md={12}>
                   <InfoArea
                     description=''
                     className={classes.email}
                     title="enquiry@squarecooky.com"
                     icon={Email}
+                  />
+                </GridItem>
+                {/*<GridItem xs={12} sm={12} md={12}>
+                  <InfoArea
+                    description=''
+                    className={classes.email}
+                    title="18420455136"
+                    icon={Phone}
+                  />
+                </GridItem>*/}
+                <GridItem xs={12} sm={12} md={12}>
+                  <InfoArea
+                    description=''
+                    className={classes.email}
+                    title="深圳市南山区粤兴一道18号香港理工大学产学研大楼308室"
+                    icon={Home}
                   />
                 </GridItem>
               </GridContainer>
@@ -85,11 +104,14 @@ class WorkSection extends React.Component {
           </GridItem>
           <GridItem cs={12} sm={12} md={8}>
               <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={6}>
+                <GridItem xs={12} sm={12} md={12}>
                   <a href="http://beian.miit.gov.cn/" rel="noopener noreferrer" target="_blank">粤ICP备19066015号</a>
                 </GridItem>
               </GridContainer>
           </GridItem>
+          <div style={{'width': '300px', 'margin':'0 auto', 'padding': '20px 0'}}>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502005337" style={{'display': 'inline-block', 'textDecoration': 'none', 'height': '20px', 'lineHeight': '20px'}}><img src={beianImg} style={{'float': 'left'}}/><p style={{'float':'left', 'height': '20px', 'lineHeight':'20px', 'margin': '0px 0px 0px 5px', 'color': '#939393'}}>粤公网安备 44030502005337号</p></a>
+          </div>
         </GridContainer>
       </div>
     );

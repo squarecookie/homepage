@@ -16,11 +16,11 @@ import NavPills from "components/NavPills/NavPills.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 
-import yfg01 from "assets/img/projects/yfg01.jpg";
-import yfg02 from "assets/img/projects/yfg02.jpg";
-import yfg03 from "assets/img/projects/yfg03.jpg";
-import yfg04 from "assets/img/projects/yfg04.jpg";
-import yfgqrcode from "assets/img/projects/yfgqrcode.jpg";
+// import yfg01 from "assets/img/projects/yfg01.jpg";
+// import yfg02 from "assets/img/projects/yfg02.jpg";
+// import yfg03 from "assets/img/projects/yfg03.jpg";
+// import yfg04 from "assets/img/projects/yfg04.jpg";
+// import yfgqrcode from "assets/img/projects/yfgqrcode.jpg";
 
 import js01 from "assets/img/projects/js01.jpg";
 import js02 from "assets/img/projects/js02.jpg";
@@ -65,20 +65,20 @@ class ProjectSection extends React.Component {
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "玉峰谷",
+                      tabButton: "圈圈聘",
                       tabContent: (
                           <GridContainer justify="center" className={classes.content}>
                             <GridItem xs={12} sm={12} md={12}>
                               <GridContainer>
                                 <GridItem xs={6} sm={9} md={9}>
-                                  <h4 className={classes.projectDescription}>众包图像数据标注平台，基于博弈论的众包质量控制系统，节省人力，精准调控。</h4>
+                                  <h4 className={classes.projectDescription}>一个主打移动端的互联网招聘平台，利用人工智能+大数据技术将供应端（求职者）和需求端（公司客户）进行匹配。</h4>
                                 </GridItem>
                                 <GridItem xs={6} sm={3} md={3}>
-                                  <p>微信小程序</p>
+                                  <p>H5网页</p>
                                   <Card plain>
                                     <img
                                       alt="..."
-                                      src={yfgqrcode}
+                                      src={qqpqrcode}
                                       className={navImageClasses}
                                     />
                                     <CardBody>                                      
@@ -95,28 +95,28 @@ class ProjectSection extends React.Component {
                                 <GridItem xs={6} sm={3}>
                                   <img
                                     alt="..."
-                                    src={yfg01}
+                                    src={qqp01}
                                     className={navImageClasses}
                                   />
                                 </GridItem>
                                 <GridItem xs={6} sm={3}>
                                   <img
                                     alt="..."
-                                    src={yfg02}
+                                    src={qqp02}
                                     className={navImageClasses}
                                   />
                                 </GridItem>
                                 <GridItem xs={6} sm={3}>
                                   <img
                                     alt="..."
-                                    src={yfg03}
+                                    src={qqp03}
                                     className={navImageClasses}
                                   />
                                  </GridItem>
                                 <GridItem xs={6} sm={3}>
                                   <img
                                     alt="..."
-                                    src={yfg04}
+                                    src={qqp04}
                                     className={navImageClasses}
                                   />
                                 </GridItem>
@@ -125,6 +125,67 @@ class ProjectSection extends React.Component {
                           </GridContainer>
                       )
                     },
+                    // {
+                    //   tabButton: "玉峰谷",
+                    //   tabContent: (
+                    //       <GridContainer justify="center" className={classes.content}>
+                    //         <GridItem xs={12} sm={12} md={12}>
+                    //           <GridContainer>
+                    //             <GridItem xs={6} sm={9} md={9}>
+                    //               <h4 className={classes.projectDescription}>众包图像数据标注平台，基于博弈论的众包质量控制系统，节省人力，精准调控。</h4>
+                    //             </GridItem>
+                    //             <GridItem xs={6} sm={3} md={3}>
+                    //               <p>微信小程序</p>
+                    //               <Card plain>
+                    //                 <img
+                    //                   alt="..."
+                    //                   src={yfgqrcode}
+                    //                   className={navImageClasses}
+                    //                 />
+                    //                 <CardBody>                                      
+                    //                 </CardBody>
+                    //               </Card>
+                    //             </GridItem>
+                    //           </GridContainer>
+                    //         </GridItem>
+                    //         <GridItem xs={12} sm={12} md={12}>
+                    //           <GridContainer>
+                    //             <GridItem xs={12} sm={12} md={12}>
+                    //               <h3>应用截图</h3>
+                    //             </GridItem>
+                    //             <GridItem xs={6} sm={3}>
+                    //               <img
+                    //                 alt="..."
+                    //                 src={yfg01}
+                    //                 className={navImageClasses}
+                    //               />
+                    //             </GridItem>
+                    //             <GridItem xs={6} sm={3}>
+                    //               <img
+                    //                 alt="..."
+                    //                 src={yfg02}
+                    //                 className={navImageClasses}
+                    //               />
+                    //             </GridItem>
+                    //             <GridItem xs={6} sm={3}>
+                    //               <img
+                    //                 alt="..."
+                    //                 src={yfg03}
+                    //                 className={navImageClasses}
+                    //               />
+                    //              </GridItem>
+                    //             <GridItem xs={6} sm={3}>
+                    //               <img
+                    //                 alt="..."
+                    //                 src={yfg04}
+                    //                 className={navImageClasses}
+                    //               />
+                    //             </GridItem>
+                    //           </GridContainer>
+                    //         </GridItem>
+                    //       </GridContainer>
+                    //   )
+                    // },
                     {
                       tabButton: "激似",
                       tabContent: (
@@ -186,67 +247,6 @@ class ProjectSection extends React.Component {
                                     className={navImageClasses}
                                   />
                                  </GridItem>
-                              </GridContainer>
-                            </GridItem>
-                          </GridContainer>
-                      )
-                    },
-                    {
-                      tabButton: "圈圈聘",
-                      tabContent: (
-                          <GridContainer justify="center" className={classes.content}>
-                            <GridItem xs={12} sm={12} md={12}>
-                              <GridContainer>
-                                <GridItem xs={6} sm={9} md={9}>
-                                  <h4 className={classes.projectDescription}>一个主打移动端的互联网招聘平台，利用人工智能+大数据技术将供应端（求职者）和需求端（公司客户）进行匹配。</h4>
-                                </GridItem>
-                                <GridItem xs={6} sm={3} md={3}>
-                                  <p>H5网页</p>
-                                  <Card plain>
-                                    <img
-                                      alt="..."
-                                      src={qqpqrcode}
-                                      className={navImageClasses}
-                                    />
-                                    <CardBody>                                      
-                                    </CardBody>
-                                  </Card>
-                                </GridItem>
-                              </GridContainer>
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={12}>
-                              <GridContainer>
-                                <GridItem xs={12} sm={12} md={12}>
-                                  <h3>应用截图</h3>
-                                </GridItem>
-                                <GridItem xs={6} sm={3}>
-                                  <img
-                                    alt="..."
-                                    src={qqp01}
-                                    className={navImageClasses}
-                                  />
-                                </GridItem>
-                                <GridItem xs={6} sm={3}>
-                                  <img
-                                    alt="..."
-                                    src={qqp02}
-                                    className={navImageClasses}
-                                  />
-                                </GridItem>
-                                <GridItem xs={6} sm={3}>
-                                  <img
-                                    alt="..."
-                                    src={qqp03}
-                                    className={navImageClasses}
-                                  />
-                                 </GridItem>
-                                <GridItem xs={6} sm={3}>
-                                  <img
-                                    alt="..."
-                                    src={qqp04}
-                                    className={navImageClasses}
-                                  />
-                                </GridItem>
                               </GridContainer>
                             </GridItem>
                           </GridContainer>
