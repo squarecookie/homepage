@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -33,6 +34,11 @@ class LandingPage extends React.Component {
     const { classes, ...rest } = this.props;
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>方饼干科技</title>
+          <link rel="canonical" href="https://www.squarecooky.com" />
+        </Helmet>
         <Header
           color="transparent"
           routes={dashboardRoutes}

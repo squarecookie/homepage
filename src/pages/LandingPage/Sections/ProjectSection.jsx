@@ -44,6 +44,18 @@ import mimosa02 from "assets/img/projects/mimosa02.jpg";
 import cps01 from "assets/img/projects/cps01.jpg";
 import cps02 from "assets/img/projects/cps02.jpg";
 
+import uzipqrcode from "assets/img/projects/uzipqrcode.jpg";
+import unzip1 from "assets/img/projects/unzip1.png";
+import unzip2 from "assets/img/projects/unzip2.png";
+import unzip3 from "assets/img/projects/unzip3.png";
+
+import pwqrcode from "assets/img/projects/pwqrcode.jpg";
+import pw1 from "assets/img/projects/pw1.jpg";
+import pw2 from "assets/img/projects/pw2.jpg";
+import pw3 from "assets/img/projects/pw3.jpg";
+import pw4 from "assets/img/projects/pw4.jpg";
+
+
 import projectStyle from "assets/jss/material-kit-react/views/landingPageSections/projectStyle.jsx";
 
 class ProjectSection extends React.Component {
@@ -60,10 +72,125 @@ class ProjectSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem cs={12} sm={12}>
-            <h2 className={classes.title}>客户案例</h2>
+            <h2 className={classes.title}>项目案例</h2>
                 <NavPills
                   color="primary"
                   tabs={[
+                    {
+                      tabButton: "印象密码",
+                      tabContent: (
+                          <GridContainer justify="center" className={classes.content}>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <GridContainer>
+                                <GridItem xs={6} sm={9} md={9}>
+                                  <h4 className={classes.projectDescription}>智能密码管理工具，自动生成密码助记信息，协助用户强化记忆并培养良好的密码策略。</h4>
+                                </GridItem>
+                                <GridItem xs={6} sm={3} md={3}>
+                                  <p>小程序</p>
+                                  <Card plain>
+                                    <img
+                                      alt="..."
+                                      src={pwqrcode}
+                                      className={navImageClasses}
+                                    />
+                                    <CardBody>                                      
+                                    </CardBody>
+                                  </Card>
+                                </GridItem>
+                              </GridContainer>
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <GridContainer>
+                                <GridItem xs={12} sm={12} md={12}>
+                                  <h3>应用截图</h3>
+                                </GridItem>
+                                <GridItem xs={6} sm={3}>
+                                  <img
+                                    alt="..."
+                                    src={pw1}
+                                    className={navImageClasses}
+                                  />
+                                </GridItem>
+                                <GridItem xs={6} sm={3}>
+                                  <img
+                                    alt="..."
+                                    src={pw2}
+                                    className={navImageClasses}
+                                  />
+                                </GridItem>
+                                <GridItem xs={6} sm={3}>
+                                  <img
+                                    alt="..."
+                                    src={pw3}
+                                    className={navImageClasses}
+                                  />
+                                 </GridItem>
+                                <GridItem xs={6} sm={3}>
+                                  <img
+                                    alt="..."
+                                    src={pw4}
+                                    className={navImageClasses}
+                                  />
+                                 </GridItem>
+                              </GridContainer>
+                            </GridItem>
+                          </GridContainer>
+                      )
+                    },
+                    {
+                      tabButton: "文件解压工具",
+                      tabContent: (
+                          <GridContainer justify="center" className={classes.content}>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <GridContainer>
+                                <GridItem xs={6} sm={9} md={9}>
+                                  <h4 className={classes.projectDescription}>实用的解压文件微信小程序，可直接预览和提取压缩包中的文件，无需安装第三方解压软件，支持ZIP与RAR压缩格式。</h4>
+                                </GridItem>
+                                <GridItem xs={6} sm={3} md={3}>
+                                  <p>小程序</p>
+                                  <Card plain>
+                                    <img
+                                      alt="..."
+                                      src={uzipqrcode}
+                                      className={navImageClasses}
+                                    />
+                                    <CardBody>                                      
+                                    </CardBody>
+                                  </Card>
+                                </GridItem>
+                              </GridContainer>
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <GridContainer>
+                                <GridItem xs={12} sm={12} md={12}>
+                                  <h3>应用截图</h3>
+                                </GridItem>
+                                <GridItem xs={6} sm={3}>
+                                  <img
+                                    alt="..."
+                                    src={unzip1}
+                                    className={navImageClasses}
+                                  />
+                                </GridItem>
+                                <GridItem xs={6} sm={3}>
+                                  <img
+                                    alt="..."
+                                    src={unzip2}
+                                    className={navImageClasses}
+                                  />
+                                </GridItem>
+                                <GridItem xs={6} sm={3}>
+                                  <img
+                                    alt="..."
+                                    src={unzip3}
+                                    className={navImageClasses}
+                                  />
+                                 </GridItem>
+                              </GridContainer>
+                            </GridItem>
+                          </GridContainer>
+                      )
+                    },
                     {
                       tabButton: "圈圈聘",
                       tabContent: (
